@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=	, initial-scale=1.0">
+    <title>Charlie's Beatmaker</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <script src="https://kit.fontawesome.com/4b0a44444a.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="beatmaker-container">
+    <h1>Beatmaker</h1>
+    <h2>Make your own music<br>when you like<br> and how u like.</h2>
+    <div class="sequencer">
+        <div class="kick-track">
+            <div class="controls">
+                <h1>Kick</h1>
+                <button data-track="0" class="mute kick-volume"><i class="fas fa-volume-mute"></i></button>
+                <select name="kick-select" id="kick-select">
+                    <option value="/sounds/kick-808.wav">Kick 808</option>
+                    <option value="/sounds/kick-acoustic01.wav">Kick acoustic</option>
+                    <option value="/sounds/kick-acoustic02.wav">Kick acoustic 2</option>
+                    <option value="/sounds/kick-big.wav">Kick Big</option>
+                    <option value="/sounds/kick-classic.wav">Kick classic</option>  
+                </select>
+            </div>
+
+        <div class="kick">
+            <div class="pad kick-pad b0"></div>
+            <div class="pad kick-pad b1"></div>
+            <div class="pad kick-pad b2"></div>
+            <div class="pad kick-pad b3"></div>
+            <div class="pad kick-pad b4"></div>
+            <div class="pad kick-pad b5"></div>
+            <div class="pad kick-pad b6"></div>
+        </div>
+        </div>
+        <div class="snare-track">
+            <div class="controls">
+                <h1>Snare</h1>
+                <button data-track="1" class="mute snare-volume"><i class="fas fa-volume-mute"></i></button>
+                <select name="snare-select" id="snare-select">
+                    <option value="/sounds/snare-brute.wav">Snare brute</option>
+                    <option value="/sounds/snare-dist01.wav">Snare dist 1</option>
+                    <option value="/sounds//snare-dist02.wav">Snare dist 2</option>
+                    <option value="/sounds/snare-dist03.wav">Snare dist 3</option>
+                    <option value="/sounds/snare-electro.wav">Snare electro</option>  
+                </select>
+            </div>
+
+        <div class="snare">
+            <div class="pad snare-pad b0"></div>
+            <div class="pad snare-pad b1"></div>
+            <div class="pad snare-pad b2"></div>
+            <div class="pad snare-pad b3"></div>
+            <div class="pad snare-pad b4"></div>
+            <div class="pad snare-pad b5"></div>
+            <div class="pad snare-pad b6"></div>
+        </div>
+        </div>
+        <div class="kick-track">
+            <div class="controls">
+                <h1>Clap</h1>
+                <button data-track="2" class="mute clap-volume"><i class="fas fa-volume-mute"></i></button>
+                <select name="kick-select" id="kick-select">
+                    <option value="/sounds/clap-808.wav>Kick 808">Clap 808</option>
+                    <option value="/sounds/clap-analog.wav">Clap analog</option>
+                    <option value="/sounds/clap-crushed.wav">Clap crashe</option>
+                    <option value="/sounds/clap-fat.wav">Clap fat</option>
+                 
+                </select>
+            </div>
+        <div class="clap">
+            <div class="pad clap-pad b0"></div>
+            <div class="pad clap-pad b1"></div>
+            <div class="pad clap-pad b2"></div>
+            <div class="pad clap-pad b3"></div>
+            <div class="pad clap-pad b4"></div>
+            <div class="pad clap-pad b5"></div>
+            <div class="pad clap-pad b6"></div>
+        </div>
+        </div>
+    </div>
+    <button class="play">Play</button>
+<audio src="kick-audio" src="/sounds/kick-808.wav"></audio>
+<audio src="snare-audio" src="/sounds/snare-brute.wav"></audio>
+<audio src="clap-audio" src="/sounds/clap-808.wav"></audio>
+</div>
+
+
+    <script src="/app.js"></script>
+</body>
+</html>
