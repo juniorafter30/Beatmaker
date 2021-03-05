@@ -7,16 +7,19 @@
     <title>Charlie's Beatmaker</title>
     <link rel="stylesheet" href="/styles/style.css">
     <script src="https://kit.fontawesome.com/4b0a44444a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet"> 
 
 </head>
 <body>
     <div class="beatmaker-container">
-    <h1>Beatmaker</h1>
-    <h2>Make your own music<br>when you like<br> and how u like.</h2>
+    <h1>Beat<span>maker</span> v1.0</h1>
+    <h2>Make <span class="you">your</span> own music<br>when <span class="you">you</span> like <br> and how
+        <span class="you"> u</span> like.</h2>
     <div class="sequencer">
         <div class="kick-track">
             <div class="controls">
-                <h1>Kick</h1>
+                <h3>Kick</h3>
                 <button data-track="0" class="mute kick-volume"><i class="fas fa-volume-mute"></i></button>
                 <select name="kick-select" id="kick-select">
                     <option value="/sounds/kick-808.wav">Kick 808</option>
@@ -39,7 +42,7 @@
         </div>
         <div class="snare-track">
             <div class="controls">
-                <h1>Snare</h1>
+                <h3>Snare</h3>
                 <button data-track="1" class="mute snare-volume"><i class="fas fa-volume-mute"></i></button>
                 <select name="snare-select" id="snare-select">
                     <option value="/sounds/snare-brute.wav">Snare brute</option>
@@ -62,7 +65,7 @@
         </div>
         <div class="kick-track">
             <div class="controls">
-                <h1>Clap</h1>
+                <h3>Clap</h3>
                 <button data-track="2" class="mute clap-volume"><i class="fas fa-volume-mute"></i></button>
                 <select name="kick-select" id="kick-select">
                     <option value="/sounds/clap-808.wav>Kick 808">Clap 808</option>

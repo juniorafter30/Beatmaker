@@ -3,7 +3,11 @@
   box-sizing: border-box;
   padding: 0;
 }
-
+html {
+  font-size: 62.5%;
+  color: rgb(214, 230, 253);
+  font-family: "RocknRoll One", sans-serif;
+}
 @mixin flex {
   display: flex;
   align-items: center;
@@ -11,12 +15,63 @@
 }
 
 body {
+  min-height: 100vh;
   @include flex;
+  i,
+  svg {
+    pointer-events: none;
+  }
+  background: url(/background.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .beatmaker-container {
+  background: rgba(0, 0, 0, 0.932);
+  h1 {
+    font-size: 3.5rem;
+    margin: 2rem;
+    letter-spacing: 5px;
+  }
+  h2 {
+    font-size: 2.5rem;
+    margin: 2rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
   @include flex;
   flex-direction: column;
-  min-height: 100vh;
-  max-width: 1000px;
+  min-height: 500px;
+  max-width: 800px;
+  min-width: 300px;
+  border-radius: 3%;
+  padding: 3rem;
+
+  box-shadow: 2px 2px 2px 2px rgba(20, 20, 20, 0.3);
+
+  span {
+    color: rgba(247, 114, 114, 0.788);
+  }
+
+  .play {
+    padding: 0.5rem 2rem;
+    background: rgba(247, 114, 114, 0.788);
+    border: none;
+    color: white;
+    font-family: "RocknRoll One", sans-serif;
+    cursor: pointer;
+    border-radius: 5%;
+  }
+
+  .play:hover {
+    background: white;
+    color: rgba(247, 114, 114, 0.788);
+  }
+}
+.sequencer {
+  button {
+    border: none;
+    background: none;
+  }
 }

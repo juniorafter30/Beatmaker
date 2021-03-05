@@ -5,7 +5,14 @@
   padding: 0;
 }
 
+html {
+  font-size: 62.5%;
+  color: #d6e6fd;
+  font-family: "RocknRoll One", sans-serif;
+}
+
 body {
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,9 +22,18 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background: url(/background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+body i,
+body svg {
+  pointer-events: none;
 }
 
 .beatmaker-container {
+  background: rgba(0, 0, 0, 0.932);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,7 +47,143 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 100vh;
-  max-width: 1000px;
+  min-height: 500px;
+  max-width: 800px;
+  min-width: 300px;
+  border-radius: 3%;
+  padding: 3rem;
+  -webkit-box-shadow: 2px 2px 2px 2px rgba(20, 20, 20, 0.3);
+          box-shadow: 2px 2px 2px 2px rgba(20, 20, 20, 0.3);
+}
+
+.beatmaker-container h1 {
+  font-size: 3.5rem;
+  margin: 2rem;
+  letter-spacing: 5px;
+}
+
+.beatmaker-container h2 {
+  font-size: 2.5rem;
+  margin: 2rem;
+}
+
+.beatmaker-container h3 {
+  font-size: 2rem;
+}
+
+.beatmaker-container span {
+  color: rgba(247, 114, 114, 0.788);
+}
+
+.beatmaker-container .play {
+  padding: 0.5rem 2rem;
+  background: rgba(247, 114, 114, 0.788);
+  border: none;
+  color: white;
+  font-family: "RocknRoll One", sans-serif;
+  cursor: pointer;
+  border-radius: 5%;
+}
+
+.beatmaker-container .play:hover {
+  background: white;
+  color: rgba(247, 114, 114, 0.788);
+}
+
+.sequencer button {
+  border: none;
+  background: none;
+}
+
+select {
+  border: none;
+  font-family: "RocknRoll One", sans-serif;
+  background: none;
+  color: #d6e6fd;
+}
+
+select option {
+  color: black;
+}
+
+.kick-pad,
+.snare-pad,
+.clap-pad {
+  width: 5rem;
+  min-width: 2rem;
+  height: 5rem;
+  min-height: 2rem;
+  margin: 1rem 0.5rem;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(20, 20, 20, 0.3);
+          box-shadow: 1px 1px 1px 1px rgba(20, 20, 20, 0.3);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  border-radius: 5%;
+}
+
+.kick-pad:hover,
+.snare-pad:hover,
+.clap-pad:hover {
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow: inset 0 0 10px #000000;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.kick-pad {
+  background: #f3b057;
+}
+
+.kick-pad:hover {
+  background: #796451;
+}
+
+.snare-pad {
+  background: #b6f0e8;
+}
+
+.snare-pad:hover {
+  background: #3b5a56;
+}
+
+.clap-pad {
+  background: #c3a4eb;
+}
+
+.clap-pad:hover {
+  background: #4d415e;
+}
+
+.kick-track,
+.snare-track,
+.clap-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.kick,
+.snare,
+.clap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 500px;
+  padding: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,69 @@
+select {
+  border: none;
+  font-family: "RocknRoll One", sans-serif;
+  background: none;
+  color: rgb(214, 230, 253);
+  option {
+    color: black;
+  }
+}
+
+.kick-pad,
+.snare-pad,
+.clap-pad {
+  width: 5rem;
+  min-width: 2rem;
+  height: 5rem;
+  min-height: 2rem;
+  margin: 1rem 0.5rem;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px 1px rgba(20, 20, 20, 0.3);
+  transition: all 1s ease;
+  border-radius: 5%;
+}
+.kick-pad:hover,
+.snare-pad:hover,
+.clap-pad:hover {
+  -moz-box-shadow: inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow: inset 0 0 10px #000000;
+  transition: all 0.2s ease;
+}
+
+.kick-pad {
+  background: rgb(243, 176, 87);
+}
+.kick-pad:hover {
+  background: rgb(121, 100, 81);
+}
+
+.snare-pad {
+  background: rgb(182, 240, 232);
+}
+.snare-pad:hover {
+  background: rgb(59, 90, 86);
+}
+
+.clap-pad {
+  background: rgb(195, 164, 235);
+}
+.clap-pad:hover {
+  background: rgb(77, 65, 94);
+}
+
+.kick-track,
+.snare-track,
+.clap-track {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.kick,
+.snare,
+.clap {
+  @include flex;
+  max-width: 500px;
+  padding: 1rem;
+}
