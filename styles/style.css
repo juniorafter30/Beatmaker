@@ -186,4 +186,12 @@ select option {
   max-width: 500px;
   padding: 1rem;
 }
+
+@media screen and (max-width: 700px) {
+  .kick-pad,
+  .snare-pad,
+  .clap-pad {
+    width: 2rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
