@@ -93,6 +93,8 @@ body svg {
 .sequencer button {
   border: none;
   background: none;
+  color: white;
+  margin: 1rem 0;
 }
 
 select {
@@ -191,7 +193,20 @@ select option {
   .kick-pad,
   .snare-pad,
   .clap-pad {
-    width: 2rem;
+    width: 4rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+  select {
+    font-size: 1.2rem;
+  }
+  .kick-track,
+  .snare-track,
+  .clap-track {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

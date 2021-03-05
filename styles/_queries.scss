@@ -2,6 +2,17 @@
   .kick-pad,
   .snare-pad,
   .clap-pad {
-    width: 2rem;
+    width: 4rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+  select {
+    font-size: 1.2rem;
+  }
+  .kick-track,
+  .snare-track,
+  .clap-track {
+    justify-content: center;
   }
 }
