@@ -31,24 +31,24 @@ select {
 }
 
 .kick-pad {
-  background: rgb(243, 176, 87);
+  background: rgb(241, 80, 52);
 }
-.kick-pad:hover {
-  background: rgb(121, 100, 81);
+.kick-pad.active {
+  background: rgb(95, 20, 10);
 }
 
 .snare-pad {
   background: rgb(182, 240, 232);
 }
-.snare-pad:hover {
+.snare-pad.active {
   background: rgb(59, 90, 86);
 }
 
 .clap-pad {
-  background: rgb(195, 164, 235);
+  background: rgb(51, 145, 233);
 }
-.clap-pad:hover {
-  background: rgb(77, 65, 94);
+.clap-pad.active {
+  background: rgb(8, 54, 92);
 }
 
 .kick-track,

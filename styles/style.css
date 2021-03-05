@@ -52,8 +52,8 @@ body svg {
   min-width: 300px;
   border-radius: 3%;
   padding: 3rem;
-  -webkit-box-shadow: 2px 2px 2px 2px rgba(20, 20, 20, 0.3);
-          box-shadow: 2px 2px 2px 2px rgba(20, 20, 20, 0.3);
+  -webkit-box-shadow: 2px 2px 2px 15px rgba(0, 0, 0, 0.61);
+          box-shadow: 2px 2px 2px 15px rgba(0, 0, 0, 0.61);
 }
 
 .beatmaker-container h1 {
@@ -83,6 +83,7 @@ body svg {
   font-family: "RocknRoll One", sans-serif;
   cursor: pointer;
   border-radius: 5%;
+  margin: 1rem;
 }
 
 .beatmaker-container .play:hover {
@@ -94,7 +95,29 @@ body svg {
   border: none;
   background: none;
   color: white;
-  margin: 1rem 0;
+  margin: 1rem;
+}
+
+@-webkit-keyframes playTrack {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@keyframes playTrack {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
 }
 
 select {
@@ -134,27 +157,27 @@ select option {
 }
 
 .kick-pad {
-  background: #f3b057;
+  background: #f15034;
 }
 
-.kick-pad:hover {
-  background: #796451;
+.kick-pad.active {
+  background: #5f140a;
 }
 
 .snare-pad {
   background: #b6f0e8;
 }
 
-.snare-pad:hover {
+.snare-pad.active {
   background: #3b5a56;
 }
 
 .clap-pad {
-  background: #c3a4eb;
+  background: #3391e9;
 }
 
-.clap-pad:hover {
-  background: #4d415e;
+.clap-pad.active {
+  background: #08365c;
 }
 
 .kick-track,
